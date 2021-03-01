@@ -4,6 +4,7 @@ const url = 'https://api.github.com/users';
 
 const UseEffectFetchData = () => {
   const [users, setUsers] = useState([]);
+
   useEffect(() => {
     const getUsers = async () => {
       const response = await fetch(url);

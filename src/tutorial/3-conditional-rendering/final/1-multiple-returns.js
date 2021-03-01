@@ -21,7 +21,7 @@ const MultipleReturns = () => {
         setUser(login);
         setIsLoading(false);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => console.log(error.message));
   }, []);
 
   if (isLoading) {
